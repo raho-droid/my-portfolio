@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 // components
 import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";

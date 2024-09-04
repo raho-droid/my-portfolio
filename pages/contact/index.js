@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";

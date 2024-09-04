@@ -1,41 +1,3 @@
-// work slider data
-export const workSlider = {
-  slides: [
-    {
-      images: [
-        {
-          title: "title",
-          path: "/work-1.png",
-        },
-        {
-          title: "title",
-          path: "/work-2.png",
-        },
-        {
-          title: "title",
-          path: "/work-3.png",
-        },
-        {
-          title: "title",
-          path: "/work-9.png",
-        },
-      ],
-    },
-    {
-      images: [
-        {
-          title: "title",
-          path: "/work-5.png",
-        },
-        {
-          title: "title",
-          path: "/work-6.png",
-        },
-      ],
-    },
-  ],
-};
-
 // import swiper react components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -53,6 +15,42 @@ import { BsArrowRight } from "react-icons/bs";
 import Image from "next/image";
 
 const WorkSlider = () => {
+  const workSliderData = {
+    slides: [
+      {
+        images: [
+          {
+            title: "title",
+            path: "/work-1.png",
+          },
+          {
+            title: "title",
+            path: "/work-2.png",
+          },
+          {
+            title: "title",
+            path: "/work-3.png",
+          },
+          {
+            title: "title",
+            path: "/work-9.png",
+          },
+        ],
+      },
+      {
+        images: [
+          {
+            title: "title",
+            path: "/work-5.png",
+          },
+          {
+            title: "title",
+            path: "/work-6.png",
+          },
+        ],
+      },
+    ],
+  };
   return (
     <Swiper
       spaceBetween={10}
@@ -62,7 +60,7 @@ const WorkSlider = () => {
       modules={[Pagination]}
       className="h-[280px] sm:h-[480px]"
     >
-      {workSlider.slides.map((slide, index) => {
+      {workSliderData.slides.map((slide, index) => {
         return (
           <SwiperSlide key={index}>
             <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">

@@ -1,36 +1,48 @@
 // links
-import Link from 'next/link';
+import Link from "next/link";
 
 // icons
 import {
-  RiYoutubeLine,
+  RiGithubLine,
   RiInstagramLine,
-  RiFacebookLine,
-  RiDribbbleLine,
-  RiBehanceLine,
-  RiPinterestLine,
-} from 'react-icons/ri';
+  RiLinkedinBoxLine,
+  RiWhatsappLine,
+} from "react-icons/ri";
 
 const Socials = () => {
   return (
-    <div className='flex items-center gap-x-5 text-lg'>
-      <Link href={''} className='hover:text-accent transition-all duration-300'>
-        <RiYoutubeLine />
+    <div className="flex items-center gap-x-5 text-lg">
+      <Link
+        target="_blank"
+        rel="noopener noreferrer"
+        href={"https://www.linkedin.com/in/rahman-alim-82a6281a1/"}
+        className="hover:text-accent transition-all duration-300"
+      >
+        <RiLinkedinBoxLine size={25} />
       </Link>
-      <Link href={''} className='hover:text-accent transition-all duration-300'>
-        <RiFacebookLine />
+      <Link
+        href={"https://www.instagram.com/raho_btw"}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-accent transition-all duration-300"
+      >
+        <RiInstagramLine size={25} />
       </Link>
-      <Link href={''} className='hover:text-accent transition-all duration-300'>
-        <RiInstagramLine />
+      <Link
+        target="_blank"
+        rel="noopener noreferrer"
+        href={"https://wa.me/905369619164"}
+        className="hover:text-accent transition-all duration-300"
+      >
+        <RiWhatsappLine size={25} />
       </Link>
-      <Link href={''} className='hover:text-accent transition-all duration-300'>
-        <RiDribbbleLine />
-      </Link>
-      <Link href={''} className='hover:text-accent transition-all duration-300'>
-        <RiBehanceLine />
-      </Link>
-      <Link href={''} className='hover:text-accent transition-all duration-300'>
-        <RiPinterestLine />
+      <Link
+        target="_blank"
+        rel="noopener noreferrer"
+        href={"https://github.com/raho-droid"}
+        className="hover:text-accent transition-all duration-300"
+      >
+        <RiGithubLine size={25} />
       </Link>
     </div>
   );

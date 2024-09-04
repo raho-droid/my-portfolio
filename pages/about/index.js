@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React, { useState } from "react";
 
 // icons
@@ -29,24 +30,28 @@ export const aboutData = [
       {
         title: "Web Development",
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <FaLaravel />,
-          <FaPhp />,
-          <FaNodeJs />,
-          <SiMysql />,
+          <FaHtml5 key={0} />,
+          <FaCss3 key={1} />,
+          <FaJs key={2} />,
+          <FaReact key={3} />,
+          <SiNextdotjs key={4} />,
+          <FaLaravel key={5} />,
+          <FaPhp key={6} />,
+          <FaNodeJs key={7} />,
+          <SiMysql key={8} />,
         ],
       },
       {
         title: "Data Analysis",
-        icons: [<SiMicrosoftexcel />, <FaPython />, <SiMongodb />],
+        icons: [
+          <SiMicrosoftexcel key={0} />,
+          <FaPython key={1} />,
+          <SiMongodb key={2} />,
+        ],
       },
       {
         title: "Others",
-        icons: [<SiCplusplus />, <FaJava />],
+        icons: [<SiCplusplus key={0} />, <FaJava key={1} />],
       },
     ],
   },
